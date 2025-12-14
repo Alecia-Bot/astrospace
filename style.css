@@ -1,0 +1,94 @@
+:root{
+  --bg-1: #0f172a; /* slate-900 */
+  --bg-2: #0b1220; /* darker */
+  --card: #0f1724;
+  --muted: #94a3b8;
+  --accent-start: #6366f1;
+  --accent-end: #ec4899;
+}
+
+/* Custom styles for rental cards */
+.price-badge {
+  font-weight: 700;
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* small responsive room */
+@media (min-width: 768px) {
+  #botCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  #botCards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Slight hover pop for cards */
+article:hover {
+  transform: translateY(-10px);
+  transition: transform 0.18s cubic-bezier(.2,.9,.2,1);
+}
+/* modern CTA styling */
+.sewa-btn {
+  box-shadow: 0 8px 30px rgba(16,24,40,0.3);
+}
+
+.sewa-btn:hover { transform: translateY(-2px); }
+
+/* Adjust body bg */
+body { background: linear-gradient(180deg, #071022 0%, #071320 60%); }
+
+.shadow-custom { box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+
+.shadow-custom {
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* duration button styles */
+.duration-btn {
+  cursor: pointer;
+  background: #fff;
+}
+
+.duration-buttons .duration-btn {
+  border: 1px solid #e5e7eb;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.duration-buttons .duration-btn.active {
+  border-color: #111827;
+  background: #111827;
+  color: #fff;
+}
+
+/* permanen price button on the right */
+.sewa-btn {
+  background: linear-gradient(90deg, #10b981, #06b6d4); /* emerald -> cyan */
+  color: #fff;
+  padding: 10px 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sewa-btn:hover { opacity: 0.95; transform: translateY(-2px); }
+
+/* hide duration-buttons completely */
+.duration-buttons { display: none !important; }
+
+/* Keep price-badge and period hidden when not used */
+.period-el { display: none; }
+
+footer { color: #93c5fd; opacity: 0.8; padding: 30px 0; }
+
+

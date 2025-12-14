@@ -1,0 +1,103 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+   <title>Astrobotz — Bot WhatsApp Otomatis untuk Bisnis Anda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-fadeInUp.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    article:active {
+      transform: scale(1.05) translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      z-index: 10;
+      position: relative;
+    }
+
+    article:active {
+      border-width: 4px !important;
+      border-color: #000 !important;
+      transition: border-width 0.15s ease, border-color 0.15s ease;
+    }
+  </style>
+ </head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+  <main class="max-w-5xl w-full mx-auto px-6 pt-8 pb-12">
+  <header class="flex items-center justify-between mb-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-lg flex items-center justify-center shadow-md">
+        <i class="fas fa-robot text-white"></i>
+      </div>
+      <div>
+        <div class="text-sm font-semibold">Astrobotz🚀</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex items-center gap-3">
+      <a href="#" class="text-sm text-slate-300 hover:text-white">Beranda</a>
+      <a href="#botCards" class="text-sm text-slate-300 hover:text-white">Paket</a>
+      <a href="mailto:support@botsewa.example" class="text-sm text-slate-300 hover:text-white">Tanya Kami</a>
+      <a href="https://wa.me/6287842203625" class="ml-3 px-3 py-1 bg-teal-500 rounded text-sm font-semibold shadow hover:opacity-90">Chat WA</a>
+    </nav>
+   </header>
+   <section class="grid md:grid-cols-2 gap-6 items-center mb-10">
+     <div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">Bot WhatsApp Dengan Fitur Lengkap🚀</h1>
+      <p class="mt-3 text-slate-300">Bot ini dirancang untuk membantu kebutuhan sehari-hari, aktif 24/7.</p>
+        <div class="mt-5 flex items-center gap-3">
+         <a href="#botCards" class="px-4 py-2 bg-indigo-600 text-white rounded-lg font-semibold shadow hover:opacity-90">Lihat Paket</a>
+         <a href="mailto:support@botsewa.example" class="px-4 py-2 border border-slate-700 text-slate-300 rounded-lg hover:border-slate-500">Hubungi Support</a>
+       </div>
+     </div>
+     <div class="hidden md:block">
+       <img src="https://images.unsplash.com/photo-1612831455549-2c7c3ffab2a0?auto=format&fit=crop&w=900&q=80" alt="SaaS illustration" class="rounded-lg shadow-lg w-full object-cover"/>
+     </div>
+   </section>
+  <div class="flex flex-col items-center">
+   <img alt="Bot avatar" class="w-24 h-24 rounded-full border-2 border-black object-cover" src="https://images.unsplash.com/photo-1582719478250-124de5c4b3d0?auto=format&fit=crop&w=512&q=60"/>
+  <h1 class="mt-2 font-bold text-lg">Pilih paket sesuai kebutuhan</h1>
+  <p class="mt-1 text-center text-xs max-w-[320px]">Pilih paket sewa yang sesuai — harga terlihat pada kartu, klik tombol untuk memesan.</p>
+   </div>
+
+  <div class="mt-4 space-y-3">
+  <a href="https://wa.me/6287842203625" target="_blank" class="flex items-center gap-2 border border-slate-700 rounded-lg px-4 py-2 hover:bg-slate-800 transition duration-150">
+   <i class="fab fa-whatsapp text-base text-emerald-400"></i>
+   <span class="text-sm">Contact Owner</span>
+  </a>
+   <a href="https://wa.me/6287842203625" target="_blank" class="flex items-center gap-2 border border-slate-700 rounded-lg px-4 py-2 hover:bg-slate-800 transition duration-150">
+    <i class="fas fa-envelope text-base text-slate-400"></i>
+    <span class="text-sm">Ada Kendala? Hubungi Team Support Kami!</span>
+   </a>
+  </div>
+
+  <p class="mt-4 text-center text-xs max-w-[320px] mx-auto">
+  Pilih paket untuk trial, bisnis kecil, atau penggunaan jangka panjang. Butuh bantuan setup bot? Hubungi kami via WhatsApp.
+  </p>
+  <h2 class="mt-6 text-center font-semibold text-base">Paket Sewa Bot WhatsApp</h2>
+
+  <section id="botCards" class="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></section>
+  </main>
+
+  <footer class="text-center text-xs pb-2 select-none">
+   <p>© 2025 BotSewa. Dibuat dengan sepenuh hati untuk kebutuhan otomatisasi Anda.</p>
+  </footer>
+
+  <script src="script.js"></script>
+ </body>
+      </html>
