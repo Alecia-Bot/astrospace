@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // No dynamic duration list — simplify to a single permanen button per card
 
   const bots = [
-    { id: '15hari', name: '15 Hari', desc: 'Cocok untuk coba-coba; cepat dipasang dan langsung jalan.', price: 3000, period: '15 hari', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60' },
-    { id: '30hari', name: '30 Hari', desc: 'Paket favorit usaha kecil — fitur lengkap untuk kebutuhan sehari-hari.', price: 5000, period: '30 hari', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60' },
-    { id: '60hari', name: '60 Hari', desc: 'Pilihan hemat untuk kampanye atau periode sibuk.', price: 10000, period: '60 hari', image: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=60' },
-    { id: 'permanen', name: 'Permanen', desc: 'Paket permanen untuk penggunaan jangka panjang dan dukungan dasar.', price: 20000, period: 'Permanen', image: 'https://images.unsplash.com/photo-1505765052333-7e10ad3fef6f?auto=format&fit=crop&w=800&q=60' }
+    { id: '15hari', name: '15 Hari', desc: 'Cocok untuk coba-coba atau uji cara bekerja botnya.', price: 3000, period: '15 hari', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60' },
+    { id: '30hari', name: '30 Hari', desc: 'Jaga Group Sementara Atau Berjualan', price: 5000, period: '30 hari', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60' },
+    { id: '60hari', name: '60 Hari', desc: 'Pilihan Tepat untuk bermain game,rpg,xp Dan downloader di dalam group.', price: 10000, period: '60 hari', image: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=60' },
+    { id: 'permanen', name: 'Permanen', desc: 'Paket permanen untuk penggunaan jangka panjang.', price: 20000, period: 'Permanen', image: 'https://images.unsplash.com/photo-1505765052333-7e10ad3fef6f?auto=format&fit=crop&w=800&q=60' }
   ];
 
   const cardsContainer = document.getElementById('botCards');
